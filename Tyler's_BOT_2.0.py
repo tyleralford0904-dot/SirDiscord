@@ -171,4 +171,6 @@ async def reset(i: discord.Interaction):
     await i.response.send_message("♻️ Match reset")
 
 # ---------------- RUN BOT ----------------
-bot.run(TOKEN)
+bot.run(os.environ["TOKEN"])
+
+
