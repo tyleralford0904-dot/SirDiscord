@@ -5,7 +5,7 @@ from discord.ui import View, Button
 import random
 import asyncio
 import json
-
+heroku addons:create d123
 # ---------------- TOKEN (dummy) ----------------
 TOKEN = "MTQ1MzI4OTIyOTIzMTg0OTcyNA.GqPsBR.IVSqYDqiHOmPkzFV99Uj_ptRAx5K_hTn7pAoUI"
 GUILD_ID = 1452441647383056507  
@@ -172,5 +172,6 @@ async def reset(i: discord.Interaction):
 
 # ---------------- RUN BOT ----------------
 bot.run(os.environ["TOKEN"])
+
 
 
