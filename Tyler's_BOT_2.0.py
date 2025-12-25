@@ -7,8 +7,8 @@ import asyncio
 import json
 
 # ---------------- TOKEN (dummy) ----------------
-TOKEN = "MTQ1MzI4OTIyOTIzMTg0OTcyNA.GqPsBR.IVSqYDqiHOmPkzFV99Uj_ptRAx5K_hTn7pAoUI"
-GUILD_ID = 1452441647383056507  
+TOKEN = "jtlzf6DWWVJCRpjkIRP38EFZ-CczFPrw"
+GUILD_ID = 1452691239152521266  
 
 # ---------------- CONFIG ----------------
 MAX_PLAYERS = 8
@@ -172,5 +172,6 @@ async def reset(i: discord.Interaction):
 
 # ---------------- RUN BOT ----------------
 bot.run(os.environ["TOKEN"])
+
 
 
