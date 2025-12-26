@@ -1,1 +1,11 @@
 
+{
+  "name": "SirDiscord",
+  "description": "A short description of your project",
+  "authors": [
+    "tyleralford0904-dot"
+  ],
+  "license": "proprietary",
+  "dependencies": {
+  }
+}
