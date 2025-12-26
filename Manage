@@ -1,0 +1,14 @@
+from contextlib import contextmanager
+
+@contextmanager
+def manage_resource(name):
+    print(f"--- Initializing resource: {name} ---")
+    try:
+        yield f"Data from {name}"
+    finally:
+        # This runs even if an error happens in the 'with' block
+        print(f"--- Cleaning up resource: {name} ---")
+
+# Usage
+with manage_resource("Database_Alpha") as resource:
+    print(f"Working with: {resource}")
