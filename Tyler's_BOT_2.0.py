@@ -253,7 +253,7 @@ async def reset(i: discord.Interaction):
     await i.response.send_message(embed=make_embed("Scrim Reset", "All scrim data has been reset.", 0x2ecc71))
 
 # ===================== RUN =====================
-bot.run(os.environ["TOKEN"])
+bot.run(os.environ["MTQ1MzI4OTIyOTIzMTg0OTcyNA.GqPsBR.IVSqYDqiHOmPkzFV99Uj_ptRAx5K_hTn7pAoUI"])
 
 
 
