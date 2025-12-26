@@ -1,0 +1,20 @@
+import multiprocessing
+
+def worker(proc_num, shared_list):
+    shared_list.append(f"Item from process {proc_num}")
+
+if __name__ == "__main__":
+    # Create a manager to handle shared state
+    with multiprocessing.Manager() as manager:
+        shared_list = manager.list()  # A list that survives across processes
+        processes = []
+
+        for i in range(3):
+            p = multiprocessing.Process(target=worker, args=(i, shared_list))
+            processes.append(p)
+            p.start()
+
+        for p in processes:
+            p.join()
+
+        print("Final shared list:", shared_list)
