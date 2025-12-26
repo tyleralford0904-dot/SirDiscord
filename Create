@@ -1,0 +1,17 @@
+class TaskManager:
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, task_name):
+        self.tasks.append({"name": task_name, "status": "Pending"})
+
+    def run_all(self):
+        for task in self.tasks:
+            task["status"] = "Completed"
+            print(f"Executed: {task['name']}")
+
+# Usage
+manager = TaskManager()
+manager.add_task("Backup Data")
+manager.add_task("Email Report")
+manager.run_all()
